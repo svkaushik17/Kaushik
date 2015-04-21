@@ -1,0 +1,13 @@
+<div>
+  <carousel interval="myInterval">
+    <slide ng-repeat="slide in slides" active="slide.active">
+    	<div class="expSummStyling">
+    		<label>Project Name</label> : {{slide.projName}} <br />
+	      	<label>Client</label> : {{slide.client}}	<br />
+	      	<label>Organisation</label> : {{slide.organisation}} <br />
+      		<label>Role</label> : <br />
+      		<div  class="roleLi"><li ng-repeat="item in slide.role">{{item.points}}</li></div>
+    	</div>
+    </slide>
+  </carousel>
+</div>

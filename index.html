@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Kaushik Resume</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-route.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="app.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<body>
+		<div class="jumbotron">
+			<h1>S V Kaushik</h1>
+			<p>UI developer with 5.3 years of Experience</p>
+		</div>
+		
+		<div ng-app="resume">
+			<div class="options">
+				<div class="list-group">
+					<div ng-controller="itinary as it">
+						<div ng-repeat="items in it.itinaryList">
+							<a href="#{{items.routeTag}}" class="list-group-item">{{items.title}}
+								<span class="glyphicon glyphicon-chevron-right floatRight"></span>
+							</a>
+						</div>
+					</div>			
+				</div>
+			</div>
+			<div id="infoBox" class="detailedInfo">
+				<ng-view></ng-view>
+			</div>
+		</div>
+	</body>
+</html>
+

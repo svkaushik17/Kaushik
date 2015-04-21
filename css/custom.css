@@ -1,0 +1,67 @@
+.jumbotron {
+	padding: 5px 0 !important;
+	padding-left: 10px !important;
+	color: white;
+	background-color: #0A6474;
+}
+
+.detailedInfo{
+	width: 67%;
+	float: right;
+	border: #ddd;
+	border: 1px solid #ddd;
+  	margin-right: 30px;
+  	border-radius: 4px;
+  	min-height: 251px;
+  	padding: 20px;
+}
+
+.options{
+	width: 30%;
+	padding-left: 30px;
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+
+.carousel-control.left, .carousel-control.right{
+	display: none;
+}
+
+.carousel-indicators li{
+	border-color: #000000;
+	vertical-align: bottom;
+}
+.carousel-indicators .active{
+	background-color: #000000;
+	vertical-align: bottom;
+}
+
+.expSummStyling{
+	text-align: left;
+	min-height: 250px;
+	height: 100% !important;
+	vertical-align: middle;
+	margin-bottom: 30px;
+}
+
+.roleLi{
+	padding-let: 30px;
+}
